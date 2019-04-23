@@ -15,6 +15,12 @@ const increaseSalary = ( employee ) => {
 const updatedEmployees = employees.map( increaseSalary );
 console.log( "updatedEmployees", updatedEmployees );
 
+// Solution
+const increaseSalary = ( salaryIncreasePercent ) => ( employee ) => {
+  const newSalary = ( employee.salary * salaryIncreasePercent ) + employee.salary;
+  return Object.assign( { }, employee, { salary: newSalary } );
+};
+
 // 2. Rewrite generatedId and calculateTax as a pure function.
 
 const timestamp = new Date().getTime();

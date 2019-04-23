@@ -9,3 +9,14 @@ export default {
   someFunction: errorLogging( someFunction ),
   anotherFunction,
 };
+
+// My Solution
+function errorLogging( func ) {
+  return ( ...args ) => {
+      try {
+          func( ...args );
+      } catch ( e ) {
+          console.log(`Error Name: ${ e.name }, Error Message: ${ e.message }` );
+      }
+  };
+};
