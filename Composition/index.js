@@ -5,3 +5,7 @@
 const increment = a => a + 1;
 const double = a => a + a;
 const square = a => a * a;
+const doubleIncrementAndSquare = pipe( double, increment, square );
+console.log( doubleIncrementAndSquare( 2 ) ); // 25 
+
+
