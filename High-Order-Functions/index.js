@@ -1,7 +1,8 @@
 // 1. Sum the numeric values from the following array using filter, reduce
 const values = [ 0, 2, "text", "Fortech", true, 4, 10, "fp", "vasile", 999 ];
 
-// 2. Sum the salaries of Fortech employees that are working for HR department, please use filter, reduce, map. Before we sum the salaries, lets give the HR department a raise, 20% each.
+// 2. Sum the salaries of Fortech employees that are working for HR department, please use filter, reduce, map. 
+//Before we sum the salaries, lets give the HR department a raise, 20% each.
 const employees = [
     {
       fullName: "Sandra",
