@@ -23,5 +23,12 @@ const employees = [
       department: "HR",
       salary: 3000,
     },
+    {
+      fullName: "Ana",
+      department: "HR",
+      salary: 3000,
+    },
   ];
-  
+
+  // 3. 
+employees.filter( startsWithA ).map( increseSalary )
